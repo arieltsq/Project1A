@@ -7,11 +7,11 @@ function QuestionsMaker (questDisp, choice, correctAnswer) {
   this.correctAnswer = correctAnswer;
 }
 
-var Question1 = new QuestionsMaker("What's the nearest MRT to Ang Mo Kio?", ['Bishan', 'Chua Chu Kang', 'Pasir Ris', 'Buno Vista'], 0);
+var Question1 = new QuestionsMaker("What's the nearest MRT to Ang Mo Kio?", ['Bishan', 'Chua Chu Kang', 'Pasir Ris', 'Buona Vista'], 0);
 var Question2 = new QuestionsMaker("Where's Marina Bay Sand?", ['Marina Bay', 'Marina Bowl', 'Marina Barrage', 'Marina Port'], 0);
 var Question3 = new QuestionsMaker('Who founded Singapore?', ['Tengku Abdul Rahman', 'Lord Hastings', 'Sir Stamford Raffles', 'William Farquhar'], 2);
 var Question4 = new QuestionsMaker('What is Singapore most famous for?', ['Ayam Penyet', 'The Merlion', 'Beautiful Asian Women', 'MRT System'], 1);
-var Question5 = new QuestionsMaker('When was Singapore Found?', ['195 BC', '1819', '1999', '2015'], 1);
+var Question5 = new QuestionsMaker('When was Singapore founded?', ['195 BC', '1819', '1999', '2015'], 1);
 var Question6 = new QuestionsMaker('What does COE stands for', ['Car offer Entitlement', 'Certificate of Entitlement', 'Certificate of Enlightment', 'Car of Entitlement'], 1);
 
 var Quiz = {
