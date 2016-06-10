@@ -49,15 +49,6 @@ function whoWon () {
 function numberOfQuestions () {
   return Quiz.questions.length;
 }
-function currentQuestion () {
-  return Quiz.questionsIndex;
-}
-function numberOfAnswers () {
-  return Quiz.questions[Quiz.questionsIndex].choices.length;
-}
-function correctAnswer () {
-  return Quiz.questions[Quiz.questionsIndex].correctAnswer;
-}
 function playTurn (choice) {
   if (Quiz.isGameOver) {
     return false;
@@ -77,8 +68,7 @@ function playTurn (choice) {
     if (player === 1) {
       player = 2;
       Quiz.questionsIndex = 0;
-    }
-    else{
+    } else {
       Quiz.isGameOver = true;
     }
   }
@@ -88,10 +78,10 @@ function playTurn (choice) {
 function updateDisplay () {
   if (isGameOver()) {
     if (whoWon() === 2) {
-      $('h1').text("The most Singaporean winner is : " + whoWon());
+      $('h1').text('The most Singaporean winner is : ' + whoWon());
       $('button').hide();
     } else if (whoWon() === 1) {
-      $('h1').text("The most Singaporean winner is : " + whoWon());
+      $('h1').text('The most Singaporean winner is : ' + whoWon());
       $('button').hide();
     } else if (whoWon() === 3) {
       $('h1').text('Wow! Both players are double confirm Singaporean');
